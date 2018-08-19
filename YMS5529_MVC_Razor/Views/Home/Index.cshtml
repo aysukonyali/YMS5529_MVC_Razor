@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Razor ve HTML</h2>
+
+@{ 
+
+    string ad = "Can";
+    string soyad = "Oğuz";
+
+    <b>@ad</b>  <b>@soyad</b>
+
+}
+
+<h3>Karar Yapıları</h3>
+
+@{ 
+    if (ad!=null)
+    {
+        <span>İsim alanı boş değil</span>
+    }
+    else
+    {
+        <span>İsim alanı boş!</span>
+    }
+}
+
+@*Razor ile döngüler*@
+
+@for (int i = 0; i < 10; i++)
+{
+    @ad<br />
+}
+
+@*Bir Dizi Oluşturunuz. Döngü ile elemanları <ul> içerisine basınız*@
+
+
